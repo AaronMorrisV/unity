@@ -1,0 +1,710 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>We Are Unity</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id = "contentWrapper">
+        <section id = "lander">
+            
+            <div id = "logoBackgroundTexts">
+                <img src = "images/LogoBackgroundTexts/AboutText.png" id = "TurquoiseLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/TheTeamText.png" id = "OrangeLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/CarText.png" id = "LightBlueLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/BlogText.png" id = "PurpleLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/AppText.png" id = "DarkBlueLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/SponsorshipText.png" id = "YellowLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/GalleryText.png" id = "PinkLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/ProgressText.png" id = "BlueLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/ContactText.png" id = "GreenLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+                <img src = "images/LogoBackgroundTexts/InfoText.png" id = "PeachLogoSegmentBackgroundText" class = "LogoSegmentBackgroundText">
+            </div>
+
+            <div id = "navigationLogo">
+                <div id = "logoClickBox"></div>
+                <img src = "images/LogoParts/Turquoise.png" id = "TurquoiseLogoSegment" class = "logoSegment"> <!-- page = "about" -->
+                <img src = "images/LogoParts/Orange.png" id = "OrangeLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/LightBlue.png" id = "LightBlueLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/Purple.png" id = "PurpleLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/DarkBlue.png" id = "DarkBlueLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/Yellow.png" id = "YellowLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/Pink.png" id = "PinkLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/Blue.png" id = "BlueLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/Green.png" id = "GreenLogoSegment" class = "logoSegment">
+                <img src = "images/LogoParts/Peach.png" id = "PeachLogoSegment" class = "logoSegment">
+                
+            </div>
+            
+            <div id = "mobileNavigationText">
+                <div class = "mobileNavItem"><span>ABOUT</span></div>
+                <div class = "mobileNavItem"><span>SPONSORS</span></div>
+                <div class = "mobileNavItem"><span>TEAM</span></div>
+                <div class = "mobileNavItem"><span>GALLERY</span></div>
+                <div class = "mobileNavItem"><span>CAR</span></div>
+                <div class = "mobileNavItem"><span>PROGRESS</span></div>
+                <div class = "mobileNavItem"><span>BLOG</span></div>
+                <div class = "mobileNavItem"><span>CONTACT</span></div>
+                <div class = "mobileNavItem"><span>APP</span></div>
+                <div class = "mobileNavItem"><span>INFO</span></div>
+                <h1 id = "mobileNavCarouselText">WE ARE <span style = "color:#2ecc71">U</span><span style = "color:#db0a5b">N</span><span style = "color:#3498db">I</span><span style = "color:#9b59b6">T</span><span style = "color:#e74c3c">Y</span></h1>
+            </div>
+            
+            <div id = "landerCarousel" class = "segmentHoverFade">
+                <h1 style = "float:left">WE ARE&nbsp;</h1>
+                <div id = "carouselAdjective">
+                    <h1 style = "display:none; color:#1abc9c">CREATIVE</h1>
+                    <h1 style = "display:none; z-index: 10;"><span style = "color:#2ecc71">U</span><span style = "color:#db0a5b">N</span><span style = "color:#3498db">I</span><span style = "color:#9b59b6">T</span><span style = "color:#e74c3c">Y</span></h1>
+                    <h1 style = "display:none; color:#e67e22">PERSISTENT</h1>
+                    <h1 style = "display:none; color:#3498db">ABLE</h1>
+                    <h1 style = "display:none; color:#9b59b6">JOVIAL</h1>
+                    <h1 style = "display:none; color:#e74c3c">ENDURING</h1>
+                    <h1 style = "display:none; color:#f1c40f">EAGER</h1>
+                    <h1 style = "display:none; color:#db0a5b">FOCUSED</h1>
+                    <h1 style = "display:none; color:#2ecc71">GRATEFUL</h1>
+                    <h1 style = "display:none; color:#346e7b">EXACT</h1>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id = "about" class = "section">
+            <div id ="aboutMainSection" class = "sectionLander">
+                <h1 id = "aboutTitle">AB</br>&nbsp;OUT<span class = "emphasisedText">.</span></h1>
+                <div id = "aboutLanderRightWrapper" class = "landerRightWrapper">
+                    <h2>WHAT WE DO<span class = "emphasisedText">.</span></h2>
+                    <div class = "colourRectangle"></div>
+                    <p>Learn about the F1 in Schools challenge, read about FAQs and see statistics among other things<span class = "emphasisedText">.</span></p>
+                    <div class = "button" onclick="LearnMore('about', 'Turquoise');">
+                        <h3>LEARN MORE</h3>
+                        <div class = "crossWrapper"><div class = "cross"></div></div>
+                    </div> 
+                </div>
+            </div>
+            <div id = "aboutLearnMoreSection" class = "moreSection">
+                
+                <div class = "moreSectionPart1">
+                    <div class = "landerWrapper">
+                        <h2>~ Est.&nbsp 2014</h2>
+                        <p><span style = "color: white">Unity</span> is a multi award winning F1 in Schools team from the North East of England comprised of 3 boys and 2 girls aged between 16 and 17 years old.</p>
+                    </div>
+                    <div class="mouse">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+                
+                
+                <div id = "aboutLearnMorePart2" class = "fullscreenImage parallax"  style = "background-image: url('images/About/Team.jpg')">
+                    <h1>THE W<span class = "emphasisedText">O</span>RLD FINALS<span class = "emphasisedText">.</span></span></h1>
+                </div>
+                <div id = "aboutLearnMorePart3" class = "fullscreenWrapper">
+                    <div class = "leftWrapper">
+                        <h1>FORMULA&nbsp 1?</h1>
+                        <h2>What actually is the Formula 1 in Schools Challenge?</h2>
+                        <p>F1 in Schools is a formula 1 themed technology competition students compete in teams of 3-6 as they are tasked with designing and manufacturing a scaled model F1 car as well as creating and resourcing many other entities including portfolios, pit display, sponsorship and team identity.</p>
+                    </div>
+                    <div class = "rightWrapper">
+                        <div id = "aboutTasksWrapper">
+                            <div id = "aboutTasksInnerWrapper"> 
+                                <div id = "aboutTasksLeftColumnWrapper" class = "aboutTasksColumnWrapper">
+                                    <h1>MAIN TASKS</h1>
+                                    <h2>Engineering</h2>
+                                    <ul>
+                                        <li>Aerodynamics research</li>
+                                        <li>Design and manufacture a model F1 car</li>
+                                        <li>Iterative testing and modification of car</li>
+                                        <li>Create a portfolio to document concepts, research and progress</li>
+                                    </ul>
+                                </div>
+                                <div id = "aboutTasksRightColumnWrapper" class = "aboutTasksColumnWrapper">
+                                    <h2>Enterprise</h2>
+                                    <ul>
+                                        <li>Create a team identity:
+                                            <ul id = "aboutTeamIdentityTask">
+                                                <li>- Logo</li>
+                                                <li>- Website</li>
+                                                <li>- Uniforms</li>
+                                            </ul>
+                                        </li>
+                                        <!--<li>Fundraise</li>-->
+                                        <li>Acquire sponsors</li>
+                                        <li>Create and market social media pages</li>
+                                        <li>Create a booth to showcase the team</li>
+                                        <li>Create an enterprise portfolio</li>
+                                        <li>Make an app! (Optional)</li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id = "aboutLearnMorePart4" class = "fullscreenWrapper fullscreenImage"  style = "background-image: url('images/About/LewisHCrushed.png')">
+                    <h1>LEWIS H.<span class = "emphasisedText"> &amp;</span> UNITY<span class = "emphasisedText">.</span></h1>
+                </div>
+                <div id = "aboutLearnMorePart5" class = "fullscreenWrapper">
+                    <div class = "mainWrapper">
+                        <img src = "images/About/SandingCrushed.png">
+                        <div class = "rightWrapper">
+                            <div class = "titles">
+                                <h2>Science, Technology, Engineering, Art, Maths</h2>
+                                <h1>STEAM</h1>
+                            </div>
+                            
+                            <p>Each year, 1.2 million students across the globe take part in the world’s largest STEAM competition, F1 in Schools.</br>It gives them a chance to develop and showcase their STEAM skills which have serious benefits for their future, real world career pursuits.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            <div class = "moreSectionBottomSpacer"></div>
+            </div>
+        
+        </section>
+
+        <section id = "gallery" class = "section">
+            <div id = "galleryMainSection" class = "sectionLander">
+                <h1 id = "galleryTitle">GAL</br>&nbsp;&nbsp;LERY<span class = "emphasisedText">.</span></h1>
+                <div class = "landerRightWrapper">
+                    <h2>OUR MEDIA<span class = "emphasisedText">.</span></h2>
+                    <div class = "colourRectangle"></div>
+                    <p>Here you can enjoy the collection of photos and videos of our team we have amassed over the past few years<span class = "emphasisedText">.</span></p>
+                    <div class = "button" onclick="LearnMore('gallery', 'Pink');">
+                        <h3>VIEW MEDIA</h3>
+                        <div class = "crossWrapper"><div class = "cross"></div></div>
+                    </div> 
+                </div>
+            </div>
+            <div id = "galleryLearnMoreSection" class = "moreSection">
+                <div class = "moreSectionPart1">
+                    <div class = "landerWrapper">
+                        <h1><span class = "emphasisedText">"</span>There are no bad pictures, that's just how your face looks sometimes.<span class = "emphasisedText">"</span></h1> 
+                        <h2>- Abraham Lincoln</h2>
+                    </div>
+                    <div class="mouse">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+                
+                <div id = "galleryLearnMorePart2">
+                    <div class = "videoWrapper">
+                        
+                        <div class = "videoOverlay">
+                            <div id = "mainVideoOverlay">
+                                
+                                <h1 id = "videoTitle">SILVERSTONE</br>TRIP<span class = "emphasisedText">.</span></h1>
+                                
+                                <div class = "videoPlayWrapper" onClick="playPause();">
+                                    <div class = "triangle"></div>
+                                    <h2 id = "videoPlayText">PLAY</br>VIDEO</h2>
+                                </div>
+                            
+                            </div>
+
+                            <div id = "pauseButtonWrapper" onClick="playPause();">
+                                <div id = "videoPauseButton"></div>
+                            </div>
+                        </div>
+                        <div class = "videoBackgroundWrapper">
+                            <video src = "videos/Silverstone.webm" id = "videoSectionVideo" preload="none"></video>
+                            <img src = "images/SilverstoneThumbnail.webp" id = "videoThumbnail">
+                            <div class = "darkOverlay galleryVideoOverlay" id = "videoDarkOverlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id = "galleryLearnMorePart3">
+                    <div section id = "galleryWrapper">
+                
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery1.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery1Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery2.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery2Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery3.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery3Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery4.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery4Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery5.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery5Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery6.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery6Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery7.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery7Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery8.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery8Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery9.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery9Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery10.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery10Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery11.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery11Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery12.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery12Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery13.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery13Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery14.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery14Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery15.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery15Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery16.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery16Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery17.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery17Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery18.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery18Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery19.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery19Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+                        <div class = "galleryImageWrapper fadeUp">
+                            <a data-fancybox href="images/Gallery/Gallery20.webp" class = "galleryImage" style = "padding: 5px;"><img src="images/Gallery/Gallery20Thumbnail.webp" style = "width: 100%;" class = "galleryImg"></a>
+                            <div class = "galleryCross"></div>
+                        </div>
+
+                        <!--<script>$.fancybox.defaults.animationEffect = "zoom-in-out"; //zoom, fade</script>-->
+                    </div>
+                </div>
+                <div class = "moreSectionBottomSpacer"></div>
+            </div>
+        </section>
+        
+        <section id = "blog" class = "section">
+            <div id = "blogMainSection" class = "sectionLander">
+                <h1 id = "blogTitle">BL</br>&nbsp;&nbsp;OG<span class = "emphasisedText">.</span></h1>
+                <div class = "landerRightWrapper">
+                    <h2>WHAT WE'VE BEEN UP TO<span class = "emphasisedText">.</span></h2>
+                    <div class = "colourRectangle"></div>
+                    <p>Find out what we've done to prepare for this year's F1 in Schools competition<span class = "emphasisedText">.</span></p>
+                    <div class = "button" onclick="LearnMore('blog', 'Purple');">
+                        <h3>LOOK BACK</h3>
+                        <div class = "crossWrapper"><div class = "cross"></div></div>
+                    </div> 
+                </div>
+            </div>
+
+            <div id = "blogLearnMoreSection" class = "moreSection">
+                <div class = "moreSectionPart1">
+                    <div class = "landerWrapper">
+                        <h1><span class = "emphasisedText">"</span>There is no substitute for hard work.<span class = "emphasisedText">"</span></h1> 
+                        <h2>- Thomas A. Edison</h2>
+                    </div>
+                    <div class="mouse">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+                <div id = "blogLearnMorePart2">
+                    <div class = "mainBlogPost" style = "background: url('images/Gallery/Gallery1.webp') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                        <div class = "darkOverlay"></div>
+                        <div class = "blogPostContent">
+                            <h3 id = "mainBlogPostHighlightTitle">HIGHLIGHTED POST</h3>
+                            <div class ="blogContentWrapper">
+                                <h1>We Met Lewis Hamilton Today!</h1>
+                                <img src = "images/Blog/ClockIcon.png">
+                                <div class = "verticalDivider"></div>
+                                <h2>November 29, 2017</h2>
+                            </div>
+                        </div>
+                        <div class = "blogPostInfo">
+                            <div class = "blogPostInfoWrapper mainBlogPostInfoWrapper">
+                                <div class = "blogPostInfoContent">
+                                    <h1>We Met Lewis Hamilton Today!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum dolor at blandit faucibus. Nunc sed enim id magna placerat auctor. Donec interdum, turpis eu molestie fringilla, lacus elit commodo leo, non facilisis mi risus ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sit amet accumsan arcu, non euismod leo. Maecenas ac facilisis tellus. Vivamus a accumsan arcu, a fermentum leo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "blogPost" style = "background: url('images/Gallery/Gallery2.webp') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                        <div class = "darkOverlay"></div>
+                        <div class = "blogPostContent">
+                            <div class ="blogContentWrapper">
+                                <h1>Spray painting cars is well under way!</h1>
+                                <img src = "images/Blog/ClockIcon.png">
+                                <div class = "verticalDivider"></div>
+                                <h2>November 29, 2017</h2>
+                            </div>
+                        </div>
+                        <div class = "blogPostInfo">
+                            <div class = "blogPostInfoWrapper">
+                                <div class = "blogPostInfoContent">
+                                    <h1>We Met Lewis Hamilton Today!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum dolor at blandit faucibus. Nunc sed enim id magna placerat auctor. Donec interdum, turpis eu molestie fringilla, lacus elit commodo leo, non facilisis mi risus ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sit amet accumsan arcu, non euismod leo. Maecenas ac facilisis tellus. Vivamus a accumsan arcu, a fermentum leo.</p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class = "blogPost" style = "background: url('images/Gallery/Gallery3.webp') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                        <div class = "darkOverlay"></div>
+                        <div class = "blogPostContent">
+                            <div class ="blogContentWrapper">
+                                <h1>Spray painting cars is well under way!</h1>
+                                <img src = "images/Blog/ClockIcon.png">
+                                <div class = "verticalDivider"></div>
+                                <h2>November 29, 2017</h2>
+                            </div>
+                        </div>
+                        <div class = "blogPostInfo">
+                            <div class = "blogPostInfoWrapper">
+                                <div class = "blogPostInfoContent">
+                                    <h1>We Met Lewis Hamilton Today!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum dolor at blandit faucibus. Nunc sed enim id magna placerat auctor. Donec interdum, turpis eu molestie fringilla, lacus elit commodo leo, non facilisis mi risus ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sit amet accumsan arcu, non euismod leo. Maecenas ac facilisis tellus. Vivamus a accumsan arcu, a fermentum leo.</p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class = "blogPost" style = "background: url('images/Gallery/Gallery4.webp') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                        <div class = "darkOverlay"></div>
+                        <div class = "blogPostContent">
+                            <div class ="blogContentWrapper">
+                                <h1>Spray painting cars is well under way!</h1>
+                                <img src = "images/Blog/ClockIcon.png">
+                                <div class = "verticalDivider"></div>
+                                <h2>November 29, 2017</h2>
+                            </div>
+                        </div>
+                        <div class = "blogPostInfo">
+                            <div class = "blogPostInfoWrapper">
+                                <div class = "blogPostInfoContent">
+                                    <h1>We Met Lewis Hamilton Today!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum dolor at blandit faucibus. Nunc sed enim id magna placerat auctor. Donec interdum, turpis eu molestie fringilla, lacus elit commodo leo, non facilisis mi risus ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sit amet accumsan arcu, non euismod leo. Maecenas ac facilisis tellus. Vivamus a accumsan arcu, a fermentum leo.</p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class = "blogPost" style = "background: url('images/Gallery/Gallery5.webp') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                        <div class = "darkOverlay"></div>
+                        <div class = "blogPostContent">
+                            <div class ="blogContentWrapper">
+                                <h1>Spray painting cars is well under way!</h1>
+                                <img src = "images/Blog/ClockIcon.png">
+                                <div class = "verticalDivider"></div>
+                                <h2>November 29, 2017</h2>
+                            </div>
+                        </div>
+                        <div class = "blogPostInfo">
+                            <div class = "blogPostInfoWrapper">
+                                <div class = "blogPostInfoContent">
+                                    <h1>We Met Lewis Hamilton Today!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum dolor at blandit faucibus. Nunc sed enim id magna placerat auctor. Donec interdum, turpis eu molestie fringilla, lacus elit commodo leo, non facilisis mi risus ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sit amet accumsan arcu, non euismod leo. Maecenas ac facilisis tellus. Vivamus a accumsan arcu, a fermentum leo.</p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class = "blogPost" style = "background: url('images/Gallery/Gallery6.webp') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+                        <div class = "darkOverlay"></div>
+                        <div class = "blogPostContent">
+                            <div class ="blogContentWrapper">
+                                <h1>Spray painting cars is well under way!</h1>
+                                <img src = "images/Blog/ClockIcon.png">
+                                <div class = "verticalDivider"></div>
+                                <h2>November 29, 2017</h2>
+                            </div>
+                        </div>
+                        <div class = "blogPostInfo">
+                            <div class = "blogPostInfoWrapper">
+                                <div class = "blogPostInfoContent">
+                                    <h1>We Met Lewis Hamilton Today!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum dolor at blandit faucibus. Nunc sed enim id magna placerat auctor. Donec interdum, turpis eu molestie fringilla, lacus elit commodo leo, non facilisis mi risus ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sit amet accumsan arcu, non euismod leo. Maecenas ac facilisis tellus. Vivamus a accumsan arcu, a fermentum leo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "moreSectionBottomSpacer"></div>
+            </div>
+        </section>
+
+        <section id = "contact" class = "section">
+            <div id = "contactMainSection" class = "sectionLander">
+                <h1 id = "contactTitle">CONT</br>&nbsp;&nbsp;ACT<span class = "emphasisedText">.</span></h1>
+                <div class = "landerRightWrapper">
+                    <h2>HOW TO GET IN TOUCH WITH US<span class = "emphasisedText">.</span></h2>
+                    <div class = "colourRectangle"></div>
+                    <p>If you have any questions or are a potential sponsor, please feel free to contact us<span class = "emphasisedText">.</span></p>
+                    <div class = "button" onclick="LearnMore('contact', 'Green');">
+                        <h3>OUR DETAILS</h3>
+                        <div class = "crossWrapper"><div class = "cross"></div></div>
+                    </div> 
+                </div>
+            </div>
+
+            <div id = "contactLearnMoreSection" class = "moreSection">
+                <div class = "moreSectionPart1">
+                    <div class = "landerWrapper">
+                        <h1><span class = "whiteText">Email:</span>&nbsp UnityF1Team@gmail.com</h1>
+                        <h1><span class = "whiteText">Facebook:</span>&nbsp @unityf1</h1>
+                        <h1><span class = "whiteText">Instagram:</span>&nbsp @unityf1</h1>
+                    </div>
+                </div>
+        </section>
+
+        <section id = "sponsorship" class = "section">
+            <div id = "sponsorshipMainSection" class = "sectionLander">
+                <h1 id = "sponsorshipTitle">SPONS</br>&nbsp;&nbsp;ORS<span class = "emphasisedText">.</span></h1>
+                <div class = "landerRightWrapper">
+                    <h2>THOSE WE OWE THANKS TO<span class = "emphasisedText">.</span></h2>
+                    <div class = "colourRectangle"></div>
+                    <p>These companies are those which so graciously allow us to do what we do<span class = "emphasisedText">.</span></p>
+                    
+                    <div class = "button" onclick="LearnMore('sponsorship', 'Yellow');">
+                        <h3>SPONSORS</h3>
+                        <div class = "crossWrapper"><div class = "cross"></div></div>
+                    </div> 
+                </div>
+            </div>
+
+            <div id = "sponsorshipLearnMoreSection" class = "moreSection">
+                <div class = "moreSectionPart1">
+                    <div class = "landerWrapper">
+                        <h1><span class = "emphasisedText">"</span>Be grateful to those who have contributed to making you who you are today.<span class = "emphasisedText">"</span></h1> 
+                        <h2>- Israelmore Ayivor</h2>
+                    </div>
+                    <div class="mouse">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+                <div id = "sponsorshipMoreSectionPart2">
+                    <div id = "sponsorshipWrapper">
+                        <h1>SPONSORSHIP PACKAGES</h1>
+                        <div class = "colourRectangle"></div>
+                        <div class = "sponsorshipPackage">
+                            <h1>Bronze</h1>
+                            <h2>£100+</h2>
+                            <ul>
+                                <li><span class = "bold">Logo</span> on pit display</li>
+                                <li><span class = "bold">Logo</span> on front of portfolios</li>
+                                <li><span class = "bold">Logo</span> on website</li>
+                                <li>Team <span class = "bold">newsletter</span> and <span class = "bold">photos</span></li>
+                            </ul>
+                            <div class = "button contactButton"><a href = "#contact">Contact Us</a></div>
+                        </div>
+                        <div class = "sponsorshipPackage">
+                            <h1>Silver</h1>
+                            <h2>£1000+</h2>
+                            <ul>
+                                <li><span class = "bold">Logo</span> on pit display</li>
+                                <li><span class = "bold">Logo</span> on front of portfolios</li>
+                                <li><span class = "bold">Logo</span> on website</li>
+                                <li>Team <span class = "bold">newsletter</span> and <span class = "bold">photos</span></li>
+                                <li>Promotional <span class = "bold">social media</span> posts</li>
+                                <li>Promotion on <span class = "bold">app</span></li>
+                            </ul>
+                            <div class = "button contactButton"><a href = "#contact">Contact Us</a></div>
+                        </div>
+                        <div class = "sponsorshipPackage">
+                            <h1 >Gold</h1>
+                            <h2>£5000+</h2>
+                            <ul>
+                                <li><span class = "bold">Logo</span> on pit display</li>
+                                <li><span class = "bold">Logo</span> on front of portfolios</li>
+                                <li><span class = "bold">Logo</span> on website</li>
+                                <li>Team <span class = "bold">newsletter</span> and <span class = "bold">photos</span></li>
+                                <li>Promotional <span class = "bold">social media</span> posts</li>
+                                <li>Promotion on <span class = "bold">app</span></li>
+                                <li><span class = "bold">Logo</span> throughout portfolios</li>
+                                <li>Offered <span class = "bold">presentation</span> to company</li>
+                                <li>Prime <span class = "bold">uniform</span> position</li>
+                            </ul>
+                            <div class = "button contactButton"><a href = "#contact">Contact Us</a></div>
+                        </div>
+                        <div class = "sponsorshipPackage" id = "platinumSponsorshipPackage">
+                            <h1>Platinum</h1>
+                            <h2>£10000+</h2>
+                            <ul>
+                                <li><span class = "bold">Logo</span> on pit display</li>
+                                <li><span class = "bold">Logo</span> on front of portfolios</li>
+                                <li><span class = "bold">Logo</span> on website</li>
+                                <li>Team <span class = "bold">newsletter</span> and <span class = "bold">photos</span></li>
+                                <li>Promotional <span class = "bold">social media</span> posts</li>
+                                <li>Promotion on <span class = "bold">app</span></li>
+                                <li><span class = "bold">Logo</span> throughout portfolios</li>
+                                <li>Offered <span class = "bold">presentation</span> to company</li>
+                                <li>Prime <span class = "bold">uniform</span> position</li>
+                                <li>Company <span class = "bold">merchandise</span> on pit display</li>
+                                <li><span class = "bold">Logo</span> on car</li>
+                            </ul>
+                            <div class = "button contactButton" style = "transition: all 0.5s;"><a href = "#contact">Contact Us</a></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id = "sponsorshipMoreSectionPart3">
+                    <h1>CURRENT SPONSORS</h1>
+                    <div class = "colourRectangle"></div>
+                    <div class = "sponsorsGrid">
+                        <div class = "sponsorsGridItem">
+                            <a href = "https://www.nissan.co.uk" target = "_blank"><img src = "images/SponsorLogos/BorderNissan.png" class = "absoluteCentered"></a>
+                        </div>
+                        <div class = "sponsorsGridItem">
+                            <a href = "https://www.reece-foundation.org" target = "_blank"><img src = "images/SponsorLogos/BorderReece.png" class = "absoluteCentered"></a>
+                        </div>
+                        <div class = "sponsorsGridItem">
+                            <a href = "http://www.sevcon.com/" target = "_blank"><img src = "images/SponsorLogos/BorderSevcon.png" class = "absoluteCentered"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "moreSectionBottomSpacer"></div>
+        </section>
+
+        <section id = "identity" class = "section">
+            <div id = "identityMainSection" class = "sectionLander">
+                <h1 id = "identityTitle">IDEN</br>&nbsp;&nbsp;TITY<span class = "emphasisedText">.</span></h1>
+                <div class = "landerRightWrapper">
+                    <h2>THE ROOTS OF OUR TEAM BRAND<span class = "emphasisedText">.</span></h2>
+                    <div class = "colourRectangle"></div>
+                    <p>Find out how we've developed our current team's branding and identity<span class = "emphasisedText">.</span></p>
+                    
+                    <div class = "button" onclick="LearnMore('identity', 'Peach');">
+                        <h3>IDENTITY</h3>
+                        <div class = "crossWrapper"><div class = "cross"></div></div>
+                    </div> 
+                </div>
+            </div>
+
+            <div id = "identityLearnMoreSection" class = "moreSection">
+                <div class = "moreSectionPart1">
+                    <div class = "landerWrapper">
+                        <h1><span class = "emphasisedText">"</span>Without differentiation you have no brand.<span class = "emphasisedText">"</span></h1> 
+                        <h2>- Bernard Kelvin Clive</h2>
+                    </div>
+                    <div class="mouse">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+                <div id = "identityMoreSectionPart2">
+                    
+                </div>
+        </section>
+    </div>
+    
+    
+    <div id = "websiteBorder">
+        <div id = "borderWrapper">
+            <div id = "borderUnityWrapper">
+                <img src = "images/BlockLogos/BlackBlockLogo.png">
+                <div class = "verticalSeparator"></div>
+                <h2 id = "logoTexterino">UNITY</h2>
+            </div>
+
+            <div id = "borderSocialWrapper">
+                <a href = "https://www.facebook.com/unityf1/" class = "fbIcon" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                <div class = "verticalSeparator"></div>
+                <a href = "https://twitter.com/unityf1?lang=en" class = "twitterIcon" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                <div class = "verticalSeparator"></div>
+                <a href = "https://www.instagram.com/unityf1/" class = "instaIcon" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+            </div>
+            
+            <div id = "borderSponsors">
+                <a href = "https://nissan.co.uk" target="_blank"><img src = "images/SponsorLogos/BorderNissan.png"></a>
+                <div class = "verticalSeparator"></div>
+                <a href = "https://www.reece-foundation.org/" target="_blank"><img src = "images/SponsorLogos/BorderReece.png"></a>
+                <div class = "verticalSeparator"></div>
+                <a href = "http://www.sevcon.com/" target="_blank"><img src = "images/SponsorLogos/BorderSevcon.png"></a>
+            </div>
+            
+            <h1 id = "borderExplanationText">CLICK A <span>COLOUR</span> TO EXPLORE</h1> <!--class = "segmentHoverFade"-->
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    
+    $('.blogPostContent').on('click', function(e) {
+        $(this).next().toggleClass("blogPostInfoActive"); //you can list several class names 
+        e.preventDefault();
+    });
+</script>
+
+
+<script>
+    //Gif reset
+    /*function gifReset(sectionName){ //Resets all gifs on a page (parameter exmaple = "about")
+        
+        $('.'+sectionName+'SectionGif').each(function(){  //.aboutSectionGif
+            
+            var imgSrc = $(this).attr("src");
+            var img = $(this);
+            
+            $(this).attr('src', ' ');
+            
+            setTimeout(function(){ 
+                img.attr("src", imgSrc);
+                                 
+            }, 1000);
+        })
+    }*/
+    
+
+    /*window.restartAnim = function () {
+        img.src = "";
+        img.src = imageUrl;
+    }*/
+</script>
+
+<script src = "js/landerCarousel.js" type = "text/javascript"></script>
+<script src = "js/fadeIn.js" type = "text/javascript"></script>
+<script src = "js/logoSegmentClickTransition.js" type = "text/javascript"></script>
+<script src = "js/logoSegmentExitPage.js" type = "text/javascript"></script>
+<script src = "js/logoSegmentHover.js" type = "text/javascript"></script>
+<script src = "js/logoSegmentPageLoader.js" type = "text/javascript"></script>
+<script src = "js/parallax.js" type = "text/javascript"></script>
+<script src = "js/aboutPageLearnMore.js" type = "text/javascript"></script> <!-- The script for when the "learn more" button is clicked on the about page -->
+<script src = "js/mobileNavSystem.js" type = "text/javascript"></script>
+<script src = "js/galleryVideo.js" type = "text/javascript"></script>
+<!--<script src = "js/galleryImageSlideUp.js" type = "text/javascript"></script>-->
+<!--<script src = "js/jquery.fancybox.min.js" type = "text/javascript"></script>-->
+
+
+

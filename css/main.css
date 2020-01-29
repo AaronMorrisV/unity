@@ -1,0 +1,1913 @@
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  background-color: #ffffff;
+  font-family: Poppins;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+
+.emphasisedText {
+  font-weight: 700; }
+
+h1 {
+  color: black;
+  font-size: 100px;
+  margin: 0;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  font-weight: 500; }
+
+h2 {
+  color: black;
+  font-size: 45px;
+  margin: 0;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  font-weight: 500; }
+
+h3 {
+  color: black;
+  font-size: 25px;
+  margin: 0;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  font-weight: 500; }
+
+i {
+  text-decoration: none;
+  color: #8c8c8c;
+  font-size: 40px; }
+
+.verticalSeparator {
+  float: left;
+  margin: 0px 13px 0 13px;
+  height: 19px;
+  width: 2px;
+  background-color: #8c8c8c; }
+
+.absoluteCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.button {
+  cursor: pointer;
+  background-color: black;
+  width: 180px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  line-height: 50px; }
+  .button h3 {
+    left: 0;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-transition: cubic-bezier(0, 0, 0, 1) all 0.3s;
+    -o-transition: cubic-bezier(0, 0, 0, 1) all 0.3s;
+    transition: cubic-bezier(0, 0, 0, 1) all 0.3s; }
+  .button .crossWrapper {
+    float: left;
+    width: 180px;
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 180px;
+    position: absolute;
+    -webkit-transition: cubic-bezier(0, 0, 0, 1) all 0.3s;
+    -o-transition: cubic-bezier(0, 0, 0, 1) all 0.3s;
+    transition: cubic-bezier(0, 0, 0, 1) all 0.3s; }
+  .button .cross {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    margin-left: 79px;
+    margin-top: 14px;
+    overflow: hidden; }
+  .button .cross:before, .button .cross:after {
+    content: "";
+    position: absolute;
+    background: white; }
+  .button .cross:before {
+    left: 50%;
+    width: 8%;
+    margin-left: -4%;
+    height: 100%; }
+  .button .cross:after {
+    top: 50%;
+    height: 8%;
+    margin-top: -4%;
+    width: 100%; }
+
+.button:hover h3 {
+  margin-left: -100%; }
+
+.button:hover .crossWrapper {
+  margin-left: 0px; }
+
+.fadeUp {
+  -webkit-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  transform: translateY(60px); }
+
+.fadeDown {
+  -webkit-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  transform: translateY(-60px); }
+
+.fadeRight {
+  -webkit-transform: translateX(-60px);
+  -ms-transform: translateX(-60px);
+  transform: translateX(-60px); }
+
+.fadeLeft {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px); }
+
+.fadeUp, .fadeLeft, .fadeRight, .fadeDown {
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s; }
+  @media (max-width: 600px) {
+    .fadeUp, .fadeLeft, .fadeRight, .fadeDown {
+      -webkit-filter: blur(0px);
+      filter: blur(0px); } }
+
+.faded {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1; }
+
+.mouse {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 480px) {
+    .mouse {
+      -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      transform: scale(0.5); } }
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+  animation-duration: 2.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0; }
+  10% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    opacity: 0; } }
+
+@keyframes scroll {
+  0% {
+    opacity: 0; }
+  10% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    opacity: 0; } }
+
+#contentWrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+#websiteBorder {
+  z-index: 100;
+  position: fixed;
+  width: calc(100% - 200px);
+  height: calc(100% - 120px);
+  top: 0;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  border: 10px solid white;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-left-width: 100px;
+  border-right-width: 100px; }
+  #websiteBorder #borderWrapper {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+    #websiteBorder #borderWrapper * {
+      pointer-events: auto; }
+    #websiteBorder #borderWrapper #borderUnityWrapper {
+      cursor: pointer;
+      margin-top: -38px; }
+      #websiteBorder #borderWrapper #borderUnityWrapper img {
+        float: left;
+        height: 16px; }
+      #websiteBorder #borderWrapper #borderUnityWrapper h2 {
+        float: left;
+        color: black;
+        font-size: 20px;
+        margin-top: -7.5px;
+        letter-spacing: 4px;
+        font-weight: 600; }
+      #websiteBorder #borderWrapper #borderUnityWrapper .verticalSeparator {
+        margin-top: 0px;
+        height: 16px;
+        background-color: black; }
+    #websiteBorder #borderWrapper #borderSocialWrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: -38px; }
+      #websiteBorder #borderWrapper #borderSocialWrapper a {
+        color: #8c8c8c;
+        float: left; }
+      #websiteBorder #borderWrapper #borderSocialWrapper i {
+        -webkit-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s; }
+      #websiteBorder #borderWrapper #borderSocialWrapper .fbIcon:hover i {
+        color: #3b97d2; }
+      #websiteBorder #borderWrapper #borderSocialWrapper .twitterIcon:hover i {
+        color: #4eb96e; }
+      #websiteBorder #borderWrapper #borderSocialWrapper .instaIcon:hover i {
+        color: #db0a5b; }
+      #websiteBorder #borderWrapper #borderSocialWrapper .verticalSeparator {
+        margin-top: -1px; }
+    #websiteBorder #borderWrapper #borderSponsors {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: -40px; }
+      #websiteBorder #borderWrapper #borderSponsors img {
+        float: left;
+        height: 16px;
+        cursor: pointer; }
+    #websiteBorder #borderWrapper #borderExplanationText {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      cursor: pointer;
+      font-size: 20px;
+      margin-bottom: -45px;
+      color: #8c8c8c;
+      font-weight: 500; }
+      #websiteBorder #borderWrapper #borderExplanationText span {
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+    #websiteBorder #borderWrapper #borderExplanationText:hover span {
+      color: #db0a5b; }
+  @media (max-width: 1400px) {
+    #websiteBorder {
+      width: calc(100% - 100px);
+      height: calc(100% - 100px);
+      border-top-width: 50px;
+      border-bottom-width: 50px;
+      border-left-width: 50px;
+      border-right-width: 50px; }
+      #websiteBorder #borderWrapper #borderUnityWrapper {
+        margin-top: -31px; }
+      #websiteBorder #borderWrapper #borderSocialWrapper {
+        margin-top: -31px; }
+      #websiteBorder #borderWrapper #borderSponsors {
+        margin-bottom: -38px; }
+      #websiteBorder #borderWrapper #borderExplanationText {
+        margin-bottom: -42px; } }
+  @media (max-width: 600px) {
+    #websiteBorder {
+      width: calc(100% - 30px);
+      height: calc(100% - 70px);
+      border-top-width: 35px;
+      border-bottom-width: 35px;
+      border-left-width: 15px;
+      border-right-width: 15px; }
+      #websiteBorder #borderWrapper #borderUnityWrapper {
+        margin-top: -25px; }
+        #websiteBorder #borderWrapper #borderUnityWrapper h2 {
+          margin-top: -6px;
+          font-size: 18px; }
+        #websiteBorder #borderWrapper #borderUnityWrapper img {
+          height: 15px; }
+        #websiteBorder #borderWrapper #borderUnityWrapper .verticalSeparator {
+          height: 15px;
+          margin: 0 8px 0 8px; }
+      #websiteBorder #borderWrapper #borderSocialWrapper {
+        margin-top: -25px; }
+        #websiteBorder #borderWrapper #borderSocialWrapper a {
+          -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          transform: scale(0.8); }
+        #websiteBorder #borderWrapper #borderSocialWrapper .verticalSeparator {
+          height: 16px;
+          margin-top: 0px;
+          margin: 0 7px 0 7px; }
+      #websiteBorder #borderWrapper #borderSponsors {
+        margin-bottom: -27px; }
+        #websiteBorder #borderWrapper #borderSponsors img {
+          height: 13px; }
+        #websiteBorder #borderWrapper #borderSponsors .verticalSeparator {
+          height: 15px;
+          margin: 0 7px 0 7px; }
+      #websiteBorder #borderWrapper #borderExplanationText {
+        display: none; } }
+  @media (max-width: 320px) {
+    #websiteBorder #borderWrapper #borderUnityWrapper {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+      transform-origin: left center; }
+    #websiteBorder #borderWrapper #borderSocialWrapper {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+      -webkit-transform-origin: right center;
+      -ms-transform-origin: right center;
+      transform-origin: right center; }
+    #websiteBorder #borderWrapper #borderSponsors {
+      margin-bottom: -24px; }
+      #websiteBorder #borderWrapper #borderSponsors img {
+        height: 8.5px; }
+      #websiteBorder #borderWrapper #borderSponsors .verticalSeparator {
+        height: 10px; } }
+
+/*@media (max-width:1400px){
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    left:50px;
+    top:50px;
+}
+@media (max-width:600px){
+    width: calc(100% - 30px);
+    height: calc(100% - 70px);
+    left:15px;
+    top:35px;
+}
+@media (max-width:320px){
+
+}*/
+#lander {
+  width: calc(100% - 200px);
+  height: calc(100% - 120px);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 100px;
+  top: 60px;
+  z-index: 1; }
+  #lander .LogoSegmentBackgroundText {
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    min-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity 1.5s;
+    -o-transition: opacity 1.5s;
+    transition: opacity 1.5s; }
+  #lander #navigationLogo {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); }
+    #lander #navigationLogo #logoClickBox {
+      cursor: pointer;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+      height: 400px;
+      width: 400px;
+      display: inline;
+      z-index: 2; }
+    #lander #navigationLogo img {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: scale(0.1);
+      -ms-transform: scale(0.1);
+      transform: scale(0.1);
+      -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+      transform-origin: top left;
+      position: absolute;
+      -webkit-transition: cubic-bezier(0, 0, 0, 1) all 3s;
+      -o-transition: cubic-bezier(0, 0, 0, 1) all 3s;
+      transition: cubic-bezier(0, 0, 0, 1) all 3s;
+      cursor: pointer; }
+    #lander #navigationLogo #TurquoiseLogoSegment {
+      margin-top: -222.5px;
+      margin-left: -172.5px; }
+    #lander #navigationLogo #OrangeLogoSegment {
+      margin-top: -120.3px;
+      margin-left: -172.5px; }
+    #lander #navigationLogo #LightBlueLogoSegment {
+      margin-top: -22.6px;
+      margin-left: -172.5px; }
+    #lander #navigationLogo #PurpleLogoSegment {
+      margin-top: 25.1px;
+      margin-left: -120.2px; }
+    #lander #navigationLogo #DarkBlueLogoSegment {
+      margin-top: -127.5px;
+      margin-left: 17.5px; }
+    #lander #navigationLogo #YellowLogoSegment {
+      margin-top: -103px;
+      margin-left: -76.5px; }
+    #lander #navigationLogo #PinkLogoSegment {
+      margin-top: -223px;
+      margin-left: -76.5px; }
+    #lander #navigationLogo #BlueLogoSegment {
+      margin-top: -222.5px;
+      margin-left: -7.7px; }
+    #lander #navigationLogo #GreenLogoSegment {
+      margin-top: -164.5px;
+      margin-left: 113.5px; }
+    #lander #navigationLogo #PeachLogoSegment {
+      margin-top: -30.2px;
+      margin-left: 113.5px; }
+  #lander #mobileNavigationText {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    -webkit-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
+    #lander #mobileNavigationText .mobileNavItem {
+      height: 20%;
+      width: 50%;
+      float: left;
+      display: table;
+      opacity: 1; }
+      #lander #mobileNavigationText .mobileNavItem span {
+        padding-left: 20px;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        color: black; }
+    #lander #mobileNavigationText h1 {
+      width: 175px;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+      top: 65%;
+      position: absolute;
+      color: black;
+      font-size: 25px;
+      font-weight: 700; }
+  #lander #landerCarousel {
+    width: 350px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-left: 32px; }
+    #lander #landerCarousel h1 {
+      font-size: 35px;
+      font-weight: 800; }
+    #lander #landerCarousel img {
+      height: 37px;
+      float: left;
+      margin-top: 61px; }
+    #lander #landerCarousel #carouselAdjective h1 {
+      float: left;
+      position: absolute; }
+  @media (max-width: 1400px) {
+    #lander {
+      width: calc(100% - 100px);
+      height: calc(100% - 100px);
+      left: 50px;
+      top: 50px; } }
+  @media (max-width: 600px) {
+    #lander {
+      width: calc(100% - 30px);
+      height: calc(100% - 70px);
+      left: 15px;
+      top: 35px; } }
+  @media (max-width: 480px) {
+    #lander #landerCarousel {
+      display: none; }
+    #lander #navigationLogo {
+      -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      transform: scale(0.5); } }
+
+.section {
+  z-index: 2; }
+
+#about .emphasisedText {
+  color: #25b89a; }
+
+#about .colourRectangle {
+  background-color: #25b89a; }
+
+#about .moreSection {
+  background-color: #25b89a; }
+  #about .moreSection h2 {
+    font-size: 18px;
+    font-weight: 600; }
+  #about .moreSection p {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 10px; }
+  #about .moreSection .landerWrapper {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  #about .moreSection .fullscreenImage {
+    background: center center;
+    background-size: cover;
+    clear: both;
+    width: 100%;
+    height: calc(100vh - 120px);
+    position: relative; }
+    #about .moreSection .fullscreenImage h1 {
+      width: 40%;
+      text-align: right;
+      font-weight: 700;
+      color: white;
+      bottom: 50px;
+      right: 100px;
+      position: absolute; }
+  #about .moreSection #aboutLearnMorePart3 .leftWrapper {
+    width: calc(40% - 100px);
+    float: left;
+    padding: 100px 0 0 100px; }
+    #about .moreSection #aboutLearnMorePart3 .leftWrapper h1 {
+      white-space: nowrap;
+      font-size: 125px;
+      color: #25b89a;
+      font-weight: 700;
+      z-index: 2;
+      position: relative; }
+    #about .moreSection #aboutLearnMorePart3 .leftWrapper h2 {
+      font-size: 20px;
+      color: #8c8c8c;
+      font-weight: 600;
+      margin-top: -20px;
+      width: 90%; }
+    #about .moreSection #aboutLearnMorePart3 .leftWrapper p {
+      padding-top: 40px;
+      font-size: 19px;
+      color: black;
+      font-weight: 500;
+      line-height: 40px;
+      width: 90%; }
+  #about .moreSection #aboutLearnMorePart3 .rightWrapper {
+    width: 60%;
+    height: 100%;
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper {
+      height: 85%;
+      width: 90%;
+      background-color: #1e1e1e;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper {
+        width: 90%;
+        height: 90%; }
+        #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper {
+          width: 40%;
+          padding: 0 5% 0 5%;
+          float: left; }
+          #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper h1 {
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: white;
+            margin-bottom: 30px; }
+          #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper h2 {
+            font-weight: 500;
+            color: white; }
+          #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper ul {
+            list-style-type: none;
+            padding: 20px 0 0 0;
+            margin: 0; }
+          #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper li {
+            color: #8c8c8c;
+            padding-top: 10px; }
+          #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper #aboutTeamIdentityTask {
+            margin: 0;
+            padding: 0; }
+            #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper #aboutTeamIdentityTask li {
+              padding: 0 0 0 30px;
+              line-height: 17px; }
+        #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksLeftColumnWrapper {
+          margin-top: 170px; }
+        #about .moreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksRightColumnWrapper {
+          margin-top: 60px; }
+  #about .moreSection #aboutLearnMorePart5 .mainWrapper {
+    width: 90%;
+    height: 90%;
+    margin: 5%; }
+    #about .moreSection #aboutLearnMorePart5 .mainWrapper img {
+      width: 55%;
+      float: left; }
+    #about .moreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper {
+      width: 43%;
+      float: left;
+      margin-top: 70px;
+      margin-left: 2%; }
+      #about .moreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper h2 {
+        color: #8c8c8c; }
+      #about .moreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper h1 {
+        margin-top: -25px;
+        margin-left: -170px;
+        white-space: nowrap;
+        font-size: 125px;
+        color: #25b89a;
+        font-weight: 700;
+        z-index: 2;
+        position: relative; }
+      #about .moreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper p {
+        margin-left: 30px;
+        font-size: 20px;
+        line-height: 45px;
+        font-weight: 500; }
+
+@media (max-width: 1400px) {
+  #about #aboutLearnMoreSection {
+    /*.fullscreenWrapper{ //A div that is the width and height of the area within the border
+                height: calc(100vh - 50px);
+            }*/ }
+    #about #aboutLearnMoreSection h2 {
+      font-size: 16px;
+      font-weight: 600; }
+    #about #aboutLearnMoreSection p {
+      font-size: 22px;
+      margin-top: 10px; }
+    #about #aboutLearnMoreSection .landerWrapper {
+      width: 70%; }
+    #about #aboutLearnMoreSection .fullscreenImage h1 {
+      font-size: 80px; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart3 {
+      height: 550px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper {
+        height: 100%;
+        width: 40%;
+        padding: 40px 0 0 0; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper h1 {
+          font-size: 60px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper h2 {
+          font-size: 15px;
+          margin-top: -15px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper p {
+          padding-top: 20px;
+          font-size: 14px;
+          line-height: 25px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper {
+        margin: 5% 0;
+        height: 100%;
+        width: 90%; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper {
+          width: 95%;
+          height: 100%;
+          padding-bottom: 15px; }
+          #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper {
+            padding: 0 2% 0 2%; }
+            #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper ul {
+              padding: 10px 0 0 0; }
+            #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper li {
+              padding-top: 5px;
+              font-size: 14px; }
+          #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksLeftColumnWrapper {
+            margin-top: 120px; }
+            #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksLeftColumnWrapper h1 {
+              font-size: 15px; }
+          #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksRightColumnWrapper {
+            margin-top: 30px; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart5 {
+      height: 450px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper img {
+        width: 45%; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper {
+        width: 53%;
+        margin-top: 0px;
+        margin-left: 2%; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper h1 {
+          margin-top: -25px;
+          margin-left: -120px;
+          font-size: 100px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper p {
+          margin-top: -30px;
+          margin-left: 0px;
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 500; } }
+
+@media (max-width: 800px) {
+  #about #aboutLearnMoreSection h2 {
+    font-size: 14px; }
+  #about #aboutLearnMoreSection p {
+    font-size: 19px; }
+  #about #aboutLearnMoreSection .fullscreenImage h1 {
+    font-size: 50px;
+    bottom: 20px;
+    right: 50px; }
+  #about #aboutLearnMoreSection #aboutLearnMorePart3 {
+    height: 400px; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper {
+      height: 250px;
+      width: 95%;
+      padding: 20px 2.5% 0 2.5%; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper h1 {
+        font-size: 50px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper h2 {
+        font-size: 15px;
+        margin-top: -15px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper p {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        line-height: 25px; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper {
+      width: 100%; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper {
+        margin: 2.5%;
+        height: 95%;
+        width: 95%; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper li {
+          padding-top: 5px;
+          font-size: 13px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksLeftColumnWrapper {
+          margin-top: 30px; }
+          #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksLeftColumnWrapper h1 {
+            font-size: 20px;
+            margin-bottom: 5px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksRightColumnWrapper {
+          margin-top: 30px; }
+  #about #aboutLearnMoreSection #aboutLearnMorePart5 {
+    height: 820px; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper img {
+      width: 100%; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper {
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 2%; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper .titles {
+        float: left;
+        width: 70%; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper h1 {
+        margin-top: -25px;
+        margin-left: 0px;
+        font-size: 70px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper p {
+        float: right;
+        width: 80%;
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 16px;
+        line-height: 30px; } }
+
+@media (max-width: 480px) {
+  #about #aboutLearnMoreSection .landerWrapper {
+    width: 75%; }
+    #about #aboutLearnMoreSection .landerWrapper h2 {
+      font-size: 12px; }
+    #about #aboutLearnMoreSection .landerWrapper p {
+      font-size: 15px; }
+  #about #aboutLearnMoreSection .fullscreenImage h1 {
+    font-size: 25px;
+    bottom: 10px;
+    right: 20px; }
+  #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper {
+    height: 300px;
+    width: 100%; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper h1 {
+      font-size: 30px; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper h2 {
+      font-size: 12px;
+      padding-top: 5px; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart3 .leftWrapper p {
+      padding-top: 20px;
+      font-size: 13px;
+      line-height: 20px; }
+  #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper {
+    margin-top: 20px;
+    width: 100%; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper {
+      margin: 0 0 30px 0;
+      height: 100%;
+      width: 100%; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper {
+        width: 100%; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper .aboutTasksColumnWrapper li {
+          padding-top: 5px;
+          font-size: 13px;
+          line-height: 15px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksLeftColumnWrapper {
+        margin-top: 30px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksLeftColumnWrapper h1 {
+          font-size: 20px;
+          margin-bottom: 5px; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart3 .rightWrapper #aboutTasksWrapper #aboutTasksInnerWrapper #aboutTasksRightColumnWrapper {
+        margin-top: 30px; }
+  #about #aboutLearnMoreSection #aboutLearnMorePart5 {
+    width: 100%;
+    height: 750px;
+    margin: 0; }
+    #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper {
+      width: 100%;
+      margin: 20px 0 0 0; }
+      #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper {
+        width: 100%;
+        margin-top: 20px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper .titles {
+          float: left;
+          width: 70%; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper h1 {
+          margin-top: -10px;
+          margin-left: -5px;
+          font-size: 70px; }
+        #about #aboutLearnMoreSection #aboutLearnMorePart5 .mainWrapper .rightWrapper p {
+          float: left;
+          width: 100%;
+          font-size: 16px;
+          line-height: 30px; } }
+
+#gallery .emphasisedText {
+  color: #db0a5b; }
+
+#gallery .moreSection {
+  background-color: #db0a5b; }
+
+#gallery .moreSectionPart1 .landerWrapper .emphasisedText {
+  color: white; }
+
+@media (max-width: 800px) {
+  #gallery .moreSectionPart1 .landerWrapper h1 {
+    font-size: 20px; }
+  #gallery .moreSectionPart1 .landerWrapper h2 {
+    font-size: 15px; } }
+
+@media (max-width: 480px) {
+  #gallery .moreSectionPart1 .landerWrapper h1 {
+    font-size: 15px; }
+  #gallery .moreSectionPart1 .landerWrapper h2 {
+    font-size: 10px; } }
+
+#gallery #galleryLearnMorePart2 {
+  height: 43vw;
+  width: 100%; }
+  #gallery #galleryLearnMorePart2 .videoWrapper {
+    height: 100%;
+    position: relative;
+    width: 100%; }
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay {
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s; }
+        #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay h1 {
+          font-weight: 700;
+          color: white;
+          bottom: 50px;
+          right: 100px;
+          position: absolute; }
+          #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay h1 emphasisedText {
+            color: #db0a5b; }
+        #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper {
+          bottom: 50px;
+          right: 150px;
+          position: absolute;
+          height: 100px;
+          width: 50px;
+          cursor: pointer; }
+          #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper h2 {
+            color: white;
+            font-size: 30px;
+            line-height: 25px;
+            font-weight: 400;
+            position: absolute; }
+          #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper .triangle {
+            margin-top: -16px;
+            margin-left: -25px;
+            position: absolute;
+            border-top: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            border-left: 52.5px solid #db0a5b;
+            top: 50%;
+            left: 53%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #pauseButtonWrapper {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0 5% 4% 0;
+        opacity: 0;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s; }
+        #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #pauseButtonWrapper #videoPauseButton {
+          width: 10px;
+          height: 30px;
+          border-right: white 6px solid;
+          border-left: white 6px solid;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoBackgroundWrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoBackgroundWrapper video {
+        position: absolute;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoBackgroundWrapper img {
+        height: 100%;
+        position: absolute;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoBackgroundWrapper .darkOverlayHide {
+        background-color: rgba(40, 40, 40, 0);
+        height: 100%; }
+  @media (max-width: 1400px) {
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay h1 {
+      bottom: 20px;
+      right: 20px;
+      font-size: 40px; }
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper {
+      bottom: -32px;
+      right: 30px; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper h2 {
+        font-size: 20px;
+        line-height: 18px; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper .triangle {
+        margin-top: -30px;
+        margin-left: -20px;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 30px solid #db0a5b; } }
+  @media (max-width: 800px) {
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay h1 {
+      bottom: 10px;
+      right: 10px;
+      font-size: 30px; }
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper {
+      bottom: -50px;
+      right: 30px; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper h2 {
+        font-size: 15px;
+        line-height: 13px; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper .triangle {
+        margin-top: -35px;
+        margin-left: -20px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 22.5px solid #db0a5b; } }
+  @media (max-width: 480px) {
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay h1 {
+      bottom: 5px;
+      right: 15px;
+      font-size: 15px;
+      line-height: 15px; }
+    #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper {
+      top: 10px;
+      left: 15px; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper h2 {
+        font-size: 15px;
+        line-height: 13px; }
+      #gallery #galleryLearnMorePart2 .videoWrapper .videoOverlay #mainVideoOverlay .videoPlayWrapper .triangle {
+        margin-top: -35px;
+        margin-left: -20px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 22.5px solid #db0a5b; } }
+
+#gallery #galleryLearnMorePart3 {
+  /*.slideUp {
+          transform: translateY(150px);
+          animation: come-in 0.9s ease forwards;
+        }
+
+        .already-visible {
+          transform: translateY(0);
+          animation: none;
+        }
+
+        @keyframes come-in {
+          to { transform: translateY(0); }
+        }*/ }
+  #gallery #galleryLearnMorePart3 #galleryWrapper {
+    margin: auto;
+    width: calc(100% + 0.4%);
+    margin-left: -0.2%; }
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper {
+      margin: 0.2%;
+      -webkit-box-sizing: border-box;
+      /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;
+      /* Firefox, other Gecko */
+      box-sizing: border-box;
+      /* Opera/IE 8+ */
+      width: 19.6%;
+      height: 250px;
+      float: left;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryCross {
+        position: absolute;
+        top: 37.5%;
+        left: 40%;
+        -webkit-transform: translate(-40%, -37.5%);
+        -ms-transform: translate(-40%, -37.5%);
+        transform: translate(-40%, -37.5%);
+        z-index: 2;
+        width: 70px;
+        height: 70px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        pointer-events: none; }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryCross:before, #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryCross:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: #ffffff; }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryCross:before {
+        left: 50%;
+        width: 2px;
+        margin-left: -1.5%;
+        height: 100%; }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryCross:after {
+        top: 50%;
+        height: 2px;
+        margin-top: -1.5%;
+        width: 100%; }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryImage:hover + .galleryCross {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryImage:hover {
+        opacity: 1; }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryImage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.7;
+        -webkit-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+        border-style: none; }
+  @media (max-width: 1700px) {
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper {
+      height: 190px;
+      margin: 0.2%;
+      width: 24.5%; } }
+  @media (max-width: 1250px) {
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper {
+      margin: 0.2%;
+      width: 32.66%; }
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper:nth-child(1n) {
+      -webkit-transition-delay: 0.3s;
+      -o-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper:nth-child(2n) {
+      -webkit-transition-delay: 0.6s;
+      -o-transition-delay: 0.6s;
+      transition-delay: 0.6s; }
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper:nth-child(3n) {
+      -webkit-transition-delay: 0.9s;
+      -o-transition-delay: 0.9s;
+      transition-delay: 0.9s; } }
+  @media (max-width: 800px) {
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper {
+      height: 180px;
+      width: 49%; } }
+  @media (max-width: 480px) {
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper {
+      height: 150px; }
+      #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper .galleryCross {
+        display: none; }
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper:nth-child(odd) {
+      -webkit-transition-delay: 0.2s;
+      -o-transition-delay: 0.2s;
+      transition-delay: 0.2s; }
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper:nth-child(even) {
+      -webkit-transition-delay: 0s;
+      -o-transition-delay: 0s;
+      transition-delay: 0s; } }
+  @media (max-width: 400px) {
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper {
+      height: 120px; } }
+  @media (max-width: 320px) {
+    #gallery #galleryLearnMorePart3 #galleryWrapper .galleryImageWrapper {
+      height: 90px; } }
+
+#blog .sectionLander h1 {
+  left: 20%; }
+  @media (max-width: 800px) {
+    #blog .sectionLander h1 {
+      left: 50%; } }
+
+#blog .sectionLander .landerRightWrapper {
+  right: 20%; }
+  #blog .sectionLander .landerRightWrapper .colourRectangle {
+    background-color: #955aa4; }
+
+#blog .moreSection .moreSectionPart1 {
+  background-color: #955aa4; }
+
+#blog .moreSection #blogLearnMorePart2 {
+  height: 1000px;
+  width: 100%; }
+  #blog .moreSection #blogLearnMorePart2 .mainBlogPost {
+    width: 50%;
+    padding-top: 50%; }
+  #blog .moreSection #blogLearnMorePart2 .blogPost {
+    width: 25%;
+    padding-top: 25%; }
+  #blog .moreSection #blogLearnMorePart2 .blogPost, #blog .moreSection #blogLearnMorePart2 .mainBlogPost {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    /*.blogPostContent:hover ~ .darkOverlay{
+                    opacity: 0;
+                }*/ }
+    #blog .moreSection #blogLearnMorePart2 .blogPost h1, #blog .moreSection #blogLearnMorePart2 .mainBlogPost h1 {
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 5px; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost img, #blog .moreSection #blogLearnMorePart2 .mainBlogPost img {
+      width: 10px;
+      float: left;
+      clear: both;
+      margin-top: 3.5px;
+      margin-right: 7px; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost .verticalDivider, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .verticalDivider {
+      display: none;
+      width: 2px;
+      height: 10px;
+      background-color: white;
+      opacity: 0.7;
+      margin: 0 7px;
+      float: left; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost h2, #blog .moreSection #blogLearnMorePart2 .mainBlogPost h2 {
+      color: white;
+      opacity: 0.7;
+      font-size: 12px;
+      float: left; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost .darkOverlay, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .darkOverlay {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.3;
+      position: absolute;
+      top: 0;
+      -webkit-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
+      display: none; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostContent, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostContent {
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      position: absolute; }
+      #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostContent .blogContentWrapper, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostContent .blogContentWrapper {
+        position: absolute;
+        bottom: 10px;
+        left: 10px; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost #mainBlogPostHighlightTitle, #blog .moreSection #blogLearnMorePart2 .mainBlogPost #mainBlogPostHighlightTitle {
+      position: absolute;
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 2px;
+      background-color: #955aa4;
+      padding: 20px; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo {
+      height: 0%;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      opacity: 0;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .blogPostInfoWrapper, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .blogPostInfoWrapper {
+        height: 100%;
+        width: 100%;
+        position: relative; }
+        #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent {
+          height: 95%;
+          width: 95%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+          #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent h1, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent h1 {
+            font-size: 20px;
+            color: black; }
+          #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent p, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent p {
+            font-size: 16px; }
+      #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .mainBlogPostInfoWrapper, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper {
+        height: 100%;
+        width: 100%;
+        position: relative; }
+        #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent {
+          height: 80%;
+          width: 80%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+          #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent h1, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent h1 {
+            font-size: 27px;
+            color: black; }
+          #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent p, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent p {
+            font-size: 20px; }
+    #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfoActive, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfoActive {
+      opacity: 1;
+      height: 100%; }
+  @media (max-width: 1400px) {
+    #blog .moreSection #blogLearnMorePart2 .mainBlogPost, #blog .moreSection #blogLearnMorePart2 .blogPost {
+      width: 100%;
+      height: 350px;
+      padding-top: 0; }
+    #blog .moreSection #blogLearnMorePart2 .mainBlogPost #mainBlogPostHighlightTitle {
+      font-size: 15px;
+      padding: 10px; }
+    #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent {
+      height: 95%;
+      width: 95%; }
+      #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent h1 {
+        font-size: 20px;
+        color: black; }
+      #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent p {
+        font-size: 16px; } }
+  @media (max-width: 600px) {
+    #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent, #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent {
+      height: 95%;
+      width: 95%; }
+      #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent h1, #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent h1, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent h1, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent h1 {
+        font-size: 15px;
+        color: black; }
+      #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent p, #blog .moreSection #blogLearnMorePart2 .blogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent p, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .blogPostInfoWrapper .blogPostInfoContent p, #blog .moreSection #blogLearnMorePart2 .mainBlogPost .blogPostInfo .mainBlogPostInfoWrapper .blogPostInfoContent p {
+        font-size: 12px; } }
+
+#contact .emphasisedText {
+  color: #4eb96e; }
+
+#contact .colourRectangle {
+  background-color: #4eb96e; }
+
+#contact .moreSection {
+  background-color: #4eb96e; }
+  #contact .moreSection .moreSectionPart1 .landerWrapper {
+    width: 90%; }
+    #contact .moreSection .moreSectionPart1 .landerWrapper .whiteText {
+      color: white; }
+    #contact .moreSection .moreSectionPart1 .landerWrapper h1 {
+      text-align: left;
+      margin-bottom: 5px; }
+
+#sponsorship .emphasisedText {
+  color: #f0c318; }
+
+#sponsorship .colourRectangle {
+  background-color: #f0c318; }
+
+#sponsorship .moreSection {
+  background-color: #f0c318; }
+  #sponsorship .moreSection .moreSectionPart1 .landerWrapper .emphasisedText {
+    color: white; }
+  #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper {
+    position: absolute;
+    width: 100%; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper h1 {
+      font-size: 50px;
+      font-weight: 600;
+      padding: 0px 0 50px 0;
+      margin-top: 20px; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .colourRectangle {
+      background-color: #f0c318;
+      position: absolute;
+      width: 450px;
+      height: 20px;
+      z-index: -1;
+      top: 20px;
+      margin: 43px 0 0 -20px; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage {
+      width: 25%;
+      padding-bottom: 20px;
+      float: left;
+      background-color: #f3f3f3;
+      -webkit-box-shadow: -3px 3px 12px 0px rgba(0, 0, 0, 0.28);
+      -moz-box-shadow: -3px 3px 12px 0px rgba(0, 0, 0, 0.28);
+      box-shadow: -3px 3px 12px 0px rgba(0, 0, 0, 0.28);
+      height: 100%; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage h1 {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 30px 0 5px 0;
+        margin: 0;
+        text-align: center; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage h2 {
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage ul {
+        background-color: #fff;
+        font-size: 18px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        list-style: none; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage li {
+        padding: 5px 0;
+        text-align: center; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage .button {
+        width: 120px;
+        height: 40px;
+        border: 0;
+        background-color: black;
+        margin: auto;
+        text-align: center; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage .button a {
+          font-size: 15px;
+          line-height: 40px;
+          color: #ffffff;
+          text-decoration: none; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage h1, #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage h2 {
+      background-color: #f0c318;
+      color: #ffffff; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage h2 {
+      padding: 0 0 20px 0;
+      margin-top: -2px; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage ul {
+      margin-top: 0px; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage .button {
+      background-color: #f0c318; }
+  @media (max-width: 1200px) {
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 {
+      height: 1450px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage {
+        margin-bottom: 50px;
+        width: 47.5%; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage:nth-child(even) {
+        margin-right: 5%; } }
+  @media (max-width: 600px) {
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 {
+      height: 1200px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 ul {
+        padding: 0;
+        margin: 0; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage {
+        margin-bottom: 20px;
+        width: 47.5%; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage h1 {
+          font-size: 16px;
+          font-weight: 400;
+          padding: 10px 0 0px 0;
+          margin: 0; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage h2 {
+          font-weight: 500;
+          font-size: 25px;
+          margin: 0;
+          padding: 0; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage ul {
+          background-color: #fff;
+          font-size: 13px;
+          padding: 5px 0;
+          margin-bottom: 15px; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage li {
+          padding: 5px 0; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage .button {
+          width: 120px;
+          height: 40px;
+          border: 0;
+          background-color: black; }
+          #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage .button a {
+            font-size: 15px;
+            line-height: 40px;
+            color: #ffffff; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage:nth-child(even) {
+        margin-right: 5%; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage h1 {
+        padding: 10px 0 0 0; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage h2 {
+        padding: 0; } }
+  @media (max-width: 480px) {
+    #sponsorship .moreSection #sponsorshipMoreSectionPart2 {
+      height: 1800px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper h1 {
+        font-size: 30px;
+        padding: 10px 30px 30px 30px;
+        line-height: 30px;
+        margin-left: -12px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .colourRectangle {
+        width: 130px;
+        height: 15px;
+        margin: 55px 0 0 70px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 30px; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage h1 {
+          font-size: 16px;
+          font-weight: 400;
+          padding: 10px 0 0px 0;
+          margin: 0; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage h2 {
+          font-weight: 500;
+          font-size: 25px;
+          margin: 0;
+          padding: 0; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage ul {
+          background-color: #fff;
+          font-size: 13px;
+          padding: 5px 0;
+          margin-bottom: 15px; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage li {
+          padding: 5px 0; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage .button {
+          width: 120px;
+          height: 40px;
+          border: 0;
+          background-color: black; }
+          #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper .sponsorshipPackage .button a {
+            font-size: 15px;
+            line-height: 40px;
+            color: #ffffff; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage h1 {
+        padding: 10px 0 0 0; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart2 #sponsorshipWrapper #platinumSponsorshipPackage h2 {
+        padding: 0; } }
+  #sponsorship .moreSection #sponsorshipMoreSectionPart3 {
+    height: 500px;
+    width: 100%;
+    margin-top: 900px;
+    clear: both; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart3 h1 {
+      font-size: 50px;
+      font-weight: 600;
+      padding: 0px 0 50px 0;
+      margin-top: 20px; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart3 .colourRectangle {
+      background-color: #f0c318;
+      position: absolute;
+      width: 350px;
+      height: 20px;
+      z-index: -1;
+      margin: -85px 0 0 -30px; }
+    #sponsorship .moreSection #sponsorshipMoreSectionPart3 .sponsorsGrid {
+      width: 100%;
+      margin-top: 0px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart3 .sponsorsGrid .sponsorsGridItem {
+        width: 33.2%;
+        height: 200px;
+        float: left;
+        position: relative; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart3 .sponsorsGrid .sponsorsGridItem img {
+          width: 70%;
+          -webkit-transition: width 0.2s;
+          -o-transition: width 0.2s;
+          transition: width 0.2s; }
+        #sponsorship .moreSection #sponsorshipMoreSectionPart3 .sponsorsGrid .sponsorsGridItem img:hover {
+          width: 60%; }
+  @media (max-width: 1200px) {
+    #sponsorship .moreSection #sponsorshipMoreSectionPart3 {
+      margin-top: 10px; } }
+  @media (max-width: 480px) {
+    #sponsorship .moreSection #sponsorshipMoreSectionPart3 {
+      margin-top: 10px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart3 h1 {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0;
+        padding: 0; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart3 .colourRectangle {
+        width: 120px;
+        height: 15px;
+        margin: -17px 0 0 37px; }
+      #sponsorship .moreSection #sponsorshipMoreSectionPart3 .sponsorsGrid .sponsorsGridItem {
+        width: 100%;
+        height: 120px; } }
+
+#identity .emphasisedText {
+  color: #e54c3b; }
+
+#identity .colourRectangle {
+  background-color: #e54c3b; }
+
+#identity .moreSection {
+  background-color: #e54c3b; }
+  #identity .moreSection .moreSectionPart1 .landerWrapper .emphasisedText {
+    color: white; }
+  #identity .moreSection #sponsorshipMoreSectionPart2 {
+    height: 500px;
+    width: 100%; }
+    #identity .moreSection #sponsorshipMoreSectionPart2 .sponsorsGrid {
+      width: 100%;
+      margin-top: 50px; }
+      #identity .moreSection #sponsorshipMoreSectionPart2 .sponsorsGrid .sponsorsGridItem {
+        width: 33.2%;
+        height: 200px;
+        float: left;
+        position: relative; }
+        #identity .moreSection #sponsorshipMoreSectionPart2 .sponsorsGrid .sponsorsGridItem img {
+          width: 70%;
+          -webkit-transition: width 0.2s;
+          -o-transition: width 0.2s;
+          transition: width 0.2s; }
+        #identity .moreSection #sponsorshipMoreSectionPart2 .sponsorsGrid .sponsorsGridItem img:hover {
+          width: 60%; }
+
+.section {
+  margin-top: 0;
+  /*@media (max-width:600px){ //Change to match website border
+        
+        .fullscreenWrapper{ //A div that is the width and height of the area within the border
+            height: calc(100vh - 35px);
+        }
+    }*/ }
+  .section .sectionLander {
+    z-index: 2;
+    -webkit-transition: cubic-bezier(0.67, 0.02, 0.73, 0.57) all 1.7s;
+    -o-transition: cubic-bezier(0.67, 0.02, 0.73, 0.57) all 1.7s;
+    transition: cubic-bezier(0.67, 0.02, 0.73, 0.57) all 1.7s;
+    position: absolute; }
+    .section .sectionLander h1 {
+      position: absolute;
+      left: 100px;
+      top: 30%;
+      font-weight: 700;
+      position: absolute;
+      letter-spacing: 15px;
+      font-size: 150px;
+      line-height: 90px;
+      -webkit-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s; }
+    .section .sectionLander h1:hover {
+      line-height: 110px; }
+    .section .sectionLander .landerRightWrapper {
+      width: 30%;
+      right: 10%;
+      top: 45%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: absolute; }
+      .section .sectionLander .landerRightWrapper h2 {
+        font-size: 30px;
+        font-weight: 700; }
+      .section .sectionLander .landerRightWrapper p {
+        font-size: 25px;
+        font-weight: 500; }
+      .section .sectionLander .landerRightWrapper .colourRectangle {
+        position: absolute;
+        width: 150px;
+        height: 25px;
+        z-index: -1;
+        top: 20px;
+        margin-left: -20px;
+        background-color: #db0a5b; }
+    @media (max-width: 1400px) {
+      .section .sectionLander h1 {
+        position: absolute;
+        left: 60px;
+        top: 30%;
+        font-size: 100px;
+        line-height: 55px; }
+      .section .sectionLander h1:hover {
+        line-height: 70px; }
+      .section .sectionLander .landerRightWrapper {
+        right: 5%;
+        top: 40%; }
+        .section .sectionLander .landerRightWrapper h2 {
+          font-size: 25px;
+          font-weight: 700; }
+        .section .sectionLander .landerRightWrapper p {
+          font-size: 15px;
+          font-weight: 500; }
+        .section .sectionLander .landerRightWrapper .colourRectangle {
+          width: 100px;
+          height: 15px;
+          top: 12px;
+          margin-left: -15px; }
+        .section .sectionLander .landerRightWrapper .button {
+          -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+          transform: scale(0.7);
+          -webkit-transform-origin: top left;
+          -ms-transform-origin: top left;
+          transform-origin: top left; } }
+    @media (max-width: 800px) {
+      .section .sectionLander .emphasisedText {
+        color: black; }
+      .section .sectionLander h1 {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 150px;
+        font-size: 80px;
+        line-height: 45px; }
+      .section .sectionLander h1:hover {
+        line-height: 55px; }
+      .section .sectionLander .landerRightWrapper {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 70%; }
+        .section .sectionLander .landerRightWrapper .colourRectangle {
+          display: none; }
+        .section .sectionLander .landerRightWrapper .button {
+          -webkit-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          transform: scale(0.9);
+          -webkit-transform-origin: top left;
+          -ms-transform-origin: top left;
+          transform-origin: top left; } }
+    @media (max-width: 480px) {
+      .section .sectionLander h1 {
+        margin-left: 5px;
+        top: 15%;
+        font-size: 35px;
+        line-height: 25px; }
+      .section .sectionLander h1:hover {
+        line-height: 30px; }
+      .section .sectionLander .landerRightWrapper {
+        top: 32%; }
+        .section .sectionLander .landerRightWrapper h2 {
+          font-size: 17px; }
+        .section .sectionLander .landerRightWrapper p {
+          font-size: 15px;
+          margin: 5px 0; }
+        .section .sectionLander .landerRightWrapper .button {
+          -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+          transform: scale(0.7); } }
+  .section .moreSection {
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: cubic-bezier(0.67, 0.02, 0.73, 0.57) all 1.7s;
+    -o-transition: cubic-bezier(0.67, 0.02, 0.73, 0.57) all 1.7s;
+    transition: cubic-bezier(0.67, 0.02, 0.73, 0.57) all 1.7s;
+    background-color: white; }
+    .section .moreSection .moreSectionPart1 {
+      position: relative;
+      height: 100%; }
+      .section .moreSection .moreSectionPart1 .landerWrapper {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        .section .moreSection .moreSectionPart1 .landerWrapper .emphasisedText {
+          color: white; }
+        .section .moreSection .moreSectionPart1 .landerWrapper h1 {
+          font-size: 30px; }
+        .section .moreSection .moreSectionPart1 .landerWrapper h2 {
+          font-size: 23px;
+          text-align: right; }
+      @media (max-width: 800px) {
+        .section .moreSection .moreSectionPart1 .landerWrapper h1 {
+          font-size: 20px; }
+        .section .moreSection .moreSectionPart1 .landerWrapper h2 {
+          font-size: 15px; } }
+      @media (max-width: 480px) {
+        .section .moreSection .moreSectionPart1 .landerWrapper h1 {
+          font-size: 15px; }
+        .section .moreSection .moreSectionPart1 .landerWrapper h2 {
+          font-size: 10px; } }
+
+.section, .sectionLander, .moreSection {
+  top: 60px;
+  width: calc(100% - 200px);
+  height: calc(100% - 120px); }
+  @media (max-width: 1400px) {
+    .section, .sectionLander, .moreSection {
+      top: 50px;
+      width: calc(100% - 100px);
+      height: calc(100% - 100px); } }
+  @media (max-width: 600px) {
+    .section, .sectionLander, .moreSection {
+      top: 35px;
+      width: calc(100% - 30px);
+      height: calc(100% - 70px); } }
+
+/*.moreSection{
+    .moreSectionPart1{       
+        height: 100%;
+        width: 100%;
+        .landerWrapper{
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .emphasisedText{
+                color: white;
+            }
+            h1{
+                font-size: 30px;
+                text-align: center;
+            }
+            h2{
+                font-size: 23px;
+                text-align: right;
+                margin-right: 15%;
+            }
+        }
+
+        @media (max-width: 800px){
+            .landerWrapper{
+                h1{
+                    font-size: 20px;
+                }
+                h2{
+                    font-size: 15px;
+                }
+            }
+        }
+        @media (max-width: 480px){
+            .landerWrapper{
+                h1{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}*/
+.moreSectionBottomSpacer {
+  height: 60px;
+  width: 100%;
+  clear: both; }
+  @media (max-width: 1400px) {
+    .moreSectionBottomSpacer {
+      height: 50px; } }
+  @media (max-width: 600px) {
+    .moreSectionBottomSpacer {
+      height: 30px; } }

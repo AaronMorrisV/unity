@@ -1,0 +1,6 @@
+HOVER YOUR MOUSE OVER THE BIG CENTRAL LOGO. 
+THE LOGO IS THE NAVIGATION MENU. 
+CLICK ON A SEGMENT TO VISIT THE SEGMENT.
+
+Website developed from scratch CSS/HTML/JQuery for my F1 in Schools team.
+Project not completed (simply due to time constraints of competition and the website not being a priority), therefore not all logo segments have a page associated with them, nor are they optimised (font sizes too big etc).
